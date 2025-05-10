@@ -1,0 +1,101 @@
+@media (min-width: 800px) {
+
+    h1{
+        background-color: white;
+    
+    }
+    
+    
+    .title{
+        background-color: var(--main-bg-color);
+    }
+    
+    
+    
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Two equal columns */
+    }
+    
+    .boxes:nth-child(2) { /* Data box */
+        grid-column: 1; /* Place in the first column */
+        grid-row: 1;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .boxes:nth-child(3) { /* Weather box */
+        grid-column: 5; /* Place in the second column */
+        grid-row: 1;
+        margin-top: 100%;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .boxes h2{
+        background-color: var(--main-bg-color);
+    }
+    
+    .hero-img {
+      grid-column: 1 /6; /* Span both columns */
+      grid-row: 1;
+    }
+    
+    
+    
+    .logo{
+        width: 30%;
+        border: 5px solid;
+        position: relative;
+        margin: 1px auto;
+        
+    }
+
+    #menu{
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        max-width: 2000px;
+        justify-content:center;
+
+        border: black solid;
+
+    }
+    .navigation {
+        flex-direction:row;
+
+
+    }
+    .navigation li {
+        display: block;
+
+    }
+
+
+    #img-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns
+        /* gap: 10px; Add spacing between images  */
+        
+
+    }
+
+    img{
+        border: #36454f solid;
+        width: 100%;
+    
+    }
+
+    .img {
+        width: 100%;
+        display: flex; /* Enable flexbox */
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+    }
+
+}
+
+
+    

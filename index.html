@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 – Web Frontend Development I - Rafael Lopez</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Sofia&display=swap">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home_large.css">
+
+    <meta name="description" content="WDD 231 - Web Frontend Development I. By Rafael Lopez. Just getting to know me and provide a look of my course work."/>
+    <meta name="author" content="Rafael Lopez"/>
+    <script src="scripts/navigation.js" defer> </script>
+    <script src="scripts/date.js" defer> </script>
+    <script src="scripts/course.js" defer> </script>
+
+</head>
+<body>
+    <header>
+        <h1  class="title,navigation"><span class="pic"><img src="images/me-profile2.jpg" alt="profile-pic"> </span><span class="title-text">Rafael Lopez</span></h1>
+        <button id="menu" aria-label="Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li> <a href="https://byupw.instructure.com/">Home</a></li>
+                <li> <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/16?lang=eng&id=p21-23">Chamber</a></li>
+                <li> <a href="#">Final</a></li>
+                <li> <a href="https://github.com/casjora">GitHub Profile</a></li>
+                <li> <a href="https://www.linkedin.com/in/rafaellopez90/">LinkedIn</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section class="card">
+            <h2>Course Work</h2>
+            <div class="course-content">
+                <ul>
+                    <li><a href="https://wave.webaim.org/">WAVE</a></li>
+                    <li><a href="https://byui-cse.github.io/wdd131-ww-course/audit/w01-homepage.html">WDD 131 Audit Tool</a></li>
+                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://placehold.co/">Image Placeholder</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Tegucigalpa, Honduras</h2>
+            <div class="city-desc">
+                <img src="images/tegus2.webp" alt="City view from Juana Lainez park">
+                
+                <p>Honduras is a Central American nation known for its diverse landscapes, ranging from rainforests to coral reefs. It is home to a rich cultural heritage, with influences from indigenous Lenca people and Spanish colonization. Honduras is renowned for its Mayan ruins at Copán, a significant archaeological site. The country is also known for its coffee production and the vibrant coral reefs of the Bay Islands, a popular destination for diving and snorkeling.
+                </p>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="certificate-filters">
+               <button id="all">All Courses</button>
+               <button id="wdd">WDD Courses</button>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Rafael Lopez, Honduras</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

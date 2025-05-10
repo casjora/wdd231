@@ -1,0 +1,178 @@
+:root{
+    --main-bg-color: #103d39; /* Light blue from the flag */
+    --text-color: #000;
+    --accent-color: #fff; /* White */
+    --border-prop:  #000 2px solid;
+}
+
+header{
+    border:5px ridge black;
+    border-radius: 10px;
+    background-color: #E0A800;
+    position: fixed;
+    top: 1px;
+    width: 92%;
+    margin-right: 50px;
+    display: flex;
+    align-items: center; /* Vertically aligns items in the center */
+    padding: 0 10px; /* Add some padding so content isn't flush against the edges */
+    box-sizing: border-box; /* Ensures padding and border don't increase the total width beyond 92% */
+    
+}
+header .title-text{
+    display: flex;
+    align-items: center; /* Vertically align image and text within this container */
+    flex-grow: 1; /* Allows this container to take up available space */
+
+}
+
+header img{
+        /* border: 2px solid black; */
+        justify-self: left;
+        width: 25%;
+        height: auto;
+        position: relative;
+
+}
+header #menu{
+    /* border: 2px solid black; */
+
+    justify-self:right;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    margin-top: 300px;
+    gap: 0;
+    padding: 0;
+
+}
+
+.boxes{
+    background-color: var(--main-bg-color);
+    text-align: center;
+    padding: 10px;
+    color: var(--accent-color);
+    border: var(--border-prop);
+    margin-bottom: 10px;
+    
+}
+
+.title{
+    border: 5px solid;  
+    display: grid;  
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: var(--accent-color);
+
+
+
+}
+
+h1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 5px var(--main-bg-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color:var(--text-color);
+    margin: 0 auto;
+    font-family: Sofia;
+}
+
+
+
+.hero-img img{
+    width: 100%;
+    height: auto;
+}
+
+
+ul{
+    list-style: none;
+    padding: 0;
+
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+.logo{
+    width: 10%;
+    border: 10px solid;
+    position: relative;
+    margin: 1px auto;
+    
+}
+
+.logo::after {
+    content: '\2600'; /* Sun symbol */
+    font-size: 50px;
+    color: var(--accent-color);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    border: var(--border-prop);
+    
+}
+
+.navigation{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: #283742;
+
+}
+
+.navigation li{
+    display: none;
+}
+
+nav a{
+    display:block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
+    background-color: #283742;
+
+}
+
+nav a:hover{
+    text-decoration: underline double;
+    background-color: #add8e6;
+    color: #000;
+}
+
+.navigation.show li{
+    display: block;
+}
+
+#menu.show::before{
+    content: "X";
+}
+
+#menu{
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1rem .75rem;
+    background-color: #eee;
+    color: #000;
+    max-width: 100px;
+    margin-top: 0;
+    margin-right: 2%;
+
+
+}
+#menu::before{
+    content: "☰";
+}
