@@ -38,6 +38,7 @@ header{
 
 .profile-pic{
     width: 60px;
+    height: auto;
 
 }
 
@@ -50,6 +51,8 @@ header{
     background: var(--primary-color);
     border: none;
     font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
 }
 
 nav ul{
@@ -57,6 +60,7 @@ nav ul{
     display: none;
     flex-direction: column;
     padding: 0;
+    margin: 0;
 }
 nav ul.show {
     display: flex;
@@ -78,11 +82,11 @@ nav ul.show {
 }
 
 #menu::before {
-    content: "☰"; /* Hamburger Icon */
+    content: "☰";
 }
 
 #menu.show::before {
-    content: "✖"; /* Close Icon - Changed from "X" to "✖" for better visual */
+    content: "✖"; 
 }
 
 h1{
@@ -101,8 +105,10 @@ img{
 
 
 .card {
-    border: 1px solid #ddd;
+    border: 1px solid var(--secondary-color);
     padding: 1rem;
+    border-radius: 10px;
+
 }
 
 h2 {
@@ -114,11 +120,48 @@ h2 {
 }
 
 .courses{
-    color: blue;
-    padding-bottom: 10px;
+    border: solid black;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    background-color: #f0f0f0;
 }
+
+.courses.completed {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+  }
 
 .flag{
     width: 20%;
+    height: auto;
+    vertical-align: middle;
 }
+
+.filters {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+
+.filters button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .filters button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
 
