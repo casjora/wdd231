@@ -1,0 +1,20 @@
+{
+    "fam_name":"Lopez Antunez",
+    "date_arrival":"20/Apr/2022",
+    "fam_members":2,
+    "bishopric_visit":false,
+    "fam_member":[
+        {
+        "name": "Rafael",
+        "gender":"male",
+        "birthday":"15/Apr/1990"
+    },
+    {
+    "name":"Crystell",
+    "gender":"female",
+    "birthday":"30/Jan/1993"
+
+}
+    ]
+
+}
