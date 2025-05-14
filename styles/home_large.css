@@ -61,3 +61,6 @@ header{
     flex-wrap: wrap;
     
 }
+nav{
+  grid-template-rows: 1fr;
+}

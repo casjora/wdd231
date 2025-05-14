@@ -57,14 +57,20 @@ header{
 
 nav ul{
     list-style:none;
-    display: none;
+    /* display: none; */
     flex-direction: column;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
-nav ul.show {
-    display: flex;
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
   }
+nav.show{
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
 
   nav a {
     text-decoration: none;
