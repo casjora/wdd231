@@ -64,7 +64,7 @@ nav a {
     display: block; 
     text-decoration: none;
     padding: 0.9rem 1rem;
-    color: var(--primary-color); 
+    color: black; 
     font-weight: bold;
     transition: background-color 0.2s, color 0.2s;
 }
