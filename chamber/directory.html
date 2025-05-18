@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Directory - Tegucigalpa Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Sofia&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+
+
+    <meta name="description" content="Chamber Directory of members of the Tegucigalpa Chamber of Commerce"/>
+    <meta name="author" content="Rafael Lopez"/>
+    <link rel="icon" href="images/favicon.ico">
+
+
+    <meta property="og:title" content="Tegucigalpa Chamber Directoy">
+    <meta property="og:type" content="website">
+
+    <meta property="og:description" content="Get to know the members of the Tegucigalpa Chamber of Commerce">
+    <meta property="og:url" content="https://casjora.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://casjora.github.io/wdd231/images/tegus2.webp" />
+
+
+    <script src="scripts/navigation.js" defer> </script>
+    <script src="scripts/directory.js" defer> </script>
+    <script src="scripts/date.js" defer> </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="images/favicon.ico" alt="Tegucigalpa Chamber Logo">
+                
+                <div id="title">
+                    <h1>Tegucigalpa</h1>
+                    <h4>Chamber of Commerce</h4>
+                </div>
+        </div>
+
+        <button id="menu" aria-label="Toggle nav menu"></button>
+        <nav id="animateme">
+            <ul class="navigation">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="directory.html" class="active">Directory</a></li>
+                <li> <a href="join.html">Join</a></li>
+                <li> <a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="hero-img">
+            <picture>
+                <source media="(min-width:300px)" srcset="images/tegus2.webp">
+                <img src="images/tegus.webp" alt="Tegucigalpa View">
+            </picture>
+            
+
+        </div>
+
+        <div class="directory-controls">
+            <h2>Member Directory</h2>
+            <div class="view-toggle">
+                <button id="grid-view" class="active-view">⏹️ Grid</button> 
+                <button id="list-view">📄 List</button> 
+                <div id="cards" class="grid-view"></div>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="chamber-info">
+            <h3>Tegucigalpa Chamber of Commerce</h3>
+            <p>Bulevar Centroamerica</p>
+            <p>Tegucigalpa, Honduras 12101</p>
+            <p>info@tegucigalpa.org</p>
+            <p>(+504) 2223-8525</p>
+
+        </div>
+        <div class="social-media">
+            <img src="images/youtube_logo.svg" alt="youtube">
+            <img src="images/twitter_logo.svg" alt="X">
+            <img src="images/linkedin_logo.png" alt="linkedIn">
+        </div>
+        <div class="student-info">
+            <p>WDD231 Class Project</p>
+            <p class="my-name">Rafael Lopez</p>
+            <p>&copy; <span id="currentyear"></span> Tegucigalpa | Chamber of Commerce </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

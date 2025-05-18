@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Regis Pharmacy",
+            "address": "Colonia Palmira, 123 Calle La Paz, Tegucigalpa, Honduras",
+            "phone_num": "2722-0490",
+            "url": "https://www.farmaciaregis.hn/",
+            "image": "https://static.wixstatic.com/media/454fda_5ea73f18d4714a24895d9b46c4790d3c~mv2.png/v1/fit/w_154,h_500,q_90,enc_avif,quality_auto/454fda_5ea73f18d4714a24895d9b46c4790d3c~mv2.png",
+            "membership_l": "3",
+            "join_date": "15/Apr/1990"
+        },
+        {
+            "name": "Car Wash Adan",
+            "address": "Bulevar Morazán, frente a Plaza Miraflores, Tegucigalpa, Honduras",
+            "phone_num": "9666-5828",
+            "url": "https://www.adancw.com",
+            "image": "https://static.wixstatic.com/media/454fda_621da38735f742d7b4d923e6408c91b6~mv2.png/v1/fit/w_154,h_500,q_90,enc_avif,quality_auto/454fda_621da38735f742d7b4d923e6408c91b6~mv2.png",
+            "membership_l": "2",
+            "join_date": "15/Apr/1990"
+        },
+        {
+            "name": "Fatte - Timeless Deco",
+            "address": "Residencial Florencia Norte, Ave. Los Próceres, Tegucigalpa, Honduras",
+            "phone_num": "3249-4070",
+            "url": "https://web.facebook.com/fattehn7?mibextid=LQQJ4d&_rdc=1&_rdr#",
+            "image": "https://static.wixstatic.com/media/454fda_fb0ed7623e4548aaa39c8be701e616d4~mv2.png/v1/fit/w_154,h_500,q_90,enc_avif,quality_auto/454fda_fb0ed7623e4548aaa39c8be701e616d4~mv2.png",
+            "membership_l": "1",
+            "join_date": "15/Apr/1990"
+        },
+        {
+            "name": "JM Tours",
+            "address": "Barrio La Hoya, Casa #505, Tegucigalpa, Honduras",
+            "phone_num": "3174-6383",
+            "url": "http://www.jmtourshonduras.com/",
+            "image": "https://static.wixstatic.com/media/454fda_1eba27d6733542be8847f1cde8de6828~mv2.png/v1/fit/w_154,h_500,q_90,enc_avif,quality_auto/454fda_1eba27d6733542be8847f1cde8de6828~mv2.png",
+            "membership_l": "3",
+            "join_date": "15/Apr/1990"
+        },
+        {
+            "name": "Jota & T",
+            "address": "Colonia Los Robles, Contiguo a Gasolinera Puma, Tegucigalpa, Honduras",
+            "phone_num": "3211-0552",
+            "url": "https://www.facebook.com/JuanySabores",
+            "image": "https://static.wixstatic.com/media/454fda_92d2236476ad4a4f8784bd24c266e7fe~mv2.png/v1/fit/w_154,h_500,q_90,enc_avif,quality_auto/454fda_92d2236476ad4a4f8784bd24c266e7fe~mv2.png",
+            "membership_l": "2",
+            "join_date": "15/Apr/1990"
+        },
+        {
+            "name": "Hijos del Maiz",
+            "address": "Centro Comercial Novacentro, Local #25, Tegucigalpa, Honduras",
+            "phone_num": "9618-9255",
+            "url": "https://www.facebook.com/hijosdelmaizhonduras/?locale=es_LA",
+            "image": "https://static.wixstatic.com/media/454fda_371d351892304a7c973ed62c406b3374~mv2.png/v1/fit/w_154,h_500,q_90,enc_avif,quality_auto/454fda_371d351892304a7c973ed62c406b3374~mv2.png",
+            "membership_l": "1",
+            "join_date": "15/Apr/1990"
+        },
+        {
+            "name": "Fumiza",
+            "address": "Colonia Kennedy, Sector 3, Bloque L, Casa #10, Tegucigalpa, Honduras",
+            "phone_num": "3210-4795",
+            "url": "https://linktab.co/Fumiza",
+            "image": "https://static.wixstatic.com/media/454fda_333c9d2cb07745179be5833367e0df64~mv2.png/v1/fit/w_220,h_500,q_90,enc_avif,quality_auto/454fda_333c9d2cb07745179be5833367e0df64~mv2.png",
+            "membership_l": "2",
+            "join_date": "15/Apr/1990"
+        }
+    ]
+}
