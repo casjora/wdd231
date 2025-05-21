@@ -146,7 +146,7 @@ header img { /* Logo */
     width: auto;
 }
 
-#title h1 {
+#title h2 {
     font-family: var(--secondary-font);
     font-size: 1.6rem; /* Adjusted for space */
     margin: 0;
