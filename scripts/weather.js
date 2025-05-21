@@ -2,6 +2,8 @@ const temp = document.getElementById("current-temp");
 const icon = document.getElementById("weather-icon");
 const captionDesc = document.querySelector("figcaption");
 
+//14.061540683408467, -87.17316778655234 Tegus
+
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.63&units=metric&appid=cf1ac3526fc5ea3345902e1b7cf5e72f";
 
 async function apiFetch(){
