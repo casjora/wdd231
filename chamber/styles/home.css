@@ -1,0 +1,221 @@
+:root{
+    --primary-color: #005A9C;
+    --secondary-color: #333333;
+    --background-color: #F8F9FA;
+    --accent-color: #E0A800;
+    --border-color: #dee2e6;
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Lato', sans-serif;
+    --main-font:'Roboto';
+    --secondary-font:'Sofia';
+    --text-color: black;
+
+}
+
+body {
+    font-family: var(--main-font),sans-serif;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 1rem;
+}
+
+/* --- Hamburger Menu --- */
+#menu {
+    background: transparent;
+    color: var(--primary-color);
+    border: none;
+    font-size: 2.2rem;
+    cursor: pointer;
+    padding: 0.25rem; 
+    order: 3; 
+}
+#menu::before { content: "☰"; }
+#menu.show::before { content: "✖"; }
+
+/* --- Navigation (Mobile - Collapsed) --- */
+nav {
+    order: 4;
+    width: 100%;
+    background-color: var(--accent-color);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.35s ease-out;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+nav.show {
+    max-height: 300px; /* Adjust based on expected menu size */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden; 
+}
+nav ul li {
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.08); 
+}
+nav a {
+    display: block; 
+    text-decoration: none;
+    padding: 0.9rem 1rem;
+    color: black; 
+    font-weight: bold;
+    transition: background-color 0.2s, color 0.2s;
+}
+nav a:hover, nav a:focus {
+    background-color: var(--primary-color); 
+    color: white; 
+}
+nav a.active {
+    background-color: #f0c040; /* Different accent for active link */
+    color: var(--secondary-color); 
+    font-weight: 700;
+  }
+
+header{
+    background: var(--accent-color);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+    
+
+}
+
+/* --- Main Content --- */
+main {
+    padding-top: 85px; /* Adjust based on your actual fixed header height */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem; 
+}
+
+
+.view-toggle button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: 1px solid transparent;
+    padding: 0.6rem 1rem;
+    margin: 0 0.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+.view-toggle button.active-view {
+    background-color: var(--primary-color);
+    font-weight: bold;
+    border-color: var(--accent-color);
+}
+.view-toggle button:hover:not(.active-view) {
+    background-color: #555; /* Darken non-active on hover */
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; 
+}
+
+header img { /* Logo */
+    height: 50px; 
+    width: auto;
+}
+
+#title h2 {
+    font-family: var(--secondary-font);
+    font-size: 1.6rem; /* Adjusted for space */
+    margin: 0;
+    color: var(--primary-color);
+    line-height: 1.1;
+}
+#title h4 {
+    font-family: var(--main-font);
+    font-size: 0.8rem; /* Adjusted for space */
+    margin: 0;
+    color: var(--secondary-color);
+    font-weight: normal;
+}
+
+
+/* --- Footer --- */
+footer {
+    background-color: var(--secondary-color);
+    color: #f0f0f0; 
+    padding: 1.5rem 1rem;
+    text-align: center;
+    margin-top: 2rem; 
+    
+}
+footer .chamber-info, footer .social-media, footer .student-info {
+    margin-bottom: 1.2rem;
+}
+footer .chamber-info:last-child, footer .social-media:last-child, footer .student-info:last-child {
+    margin-bottom: 0;
+}
+footer h3 {
+    color: var(--accent-color);
+    font-family: var(--secondary-font);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+footer p {
+    margin: 0.25rem 0;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+footer .social-media img {
+    width: 32px; 
+    height: 32px;
+    margin: 0 0.6rem;
+    filter: invert(85%) sepia(15%) saturate(100%) hue-rotate(180deg) brightness(100%) contrast(90%); /* Lighten placeholders */
+    transition: transform 0.2s;
+}
+footer .social-media a:hover img {
+    transform: scale(1.1);
+}
+footer .student-info {
+    border-top: 1px solid #444; /* Darker separator */
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+footer .my-name {
+    font-weight: bold;
+}
+#lastModified {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+}
+.hero-img {
+  width: 100%; /* Or whatever width it needs to align with your content */
+  /* text-align: center;  <-- Alternative for inline-block children */
+}
+
+.hero-img picture {
+  display: block; /* Make the picture element a block */
+  width: 75%; /* The width of the image will be relative to this */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-img img {
+  width: 100%; /* Make the image fill the picture element */
+  height: auto;
+  display: block; /* Removes extra space beneath the image */
+}
+
+
+/* End of general code, home page specific */

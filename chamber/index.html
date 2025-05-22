@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sofia&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
 
 
     <meta name="description" content="Tegucigalpa Chamber of Commerce Home or Landing Page"/>
@@ -28,7 +28,8 @@
 
     <script src="scripts/navigation.js" defer> </script>
     <script src="scripts/date.js" defer> </script>
-    <script src="scripts/weather2.js" defer> </script>
+    <script type="module" src="scripts/currentWeather.js" defer> </script>
+    <script type="module" src="scripts/forecastWeather.js" defer> </script>
 
 
 </head>
@@ -44,8 +45,8 @@
         <button id="menu" aria-label="Toggle nav menu"></button>
         <nav id="animateme">
             <ul class="navigation">
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="directory.html" class="active">Directory</a></li>
+                <li> <a href="index.html" class="active">Home</a></li>
+                <li> <a href="directory.html" >Directory</a></li>
                 <li> <a href="join.html">Join</a></li>
                 <li> <a href="discover.html">Discover</a></li>
             </ul>
@@ -68,7 +69,12 @@
         <section>
             <article class="main-cards"> 
                 <h2>Events</h2>
-                <p>content</p>
+                <p>Come join our special events!</p>
+                <ul>
+                    <li>Bazar del sabado</li>
+                    <li>Hot food competition</li>
+                    <li>Product Raffles</li>
+                </ul>
 
             </article>
             <article class="main-cards"> 
@@ -99,25 +105,25 @@
     </main>
 
     <footer>
-        <div class="chamber-info">
+        <section class="chamber-info">
             <h3>Tegucigalpa Chamber of Commerce</h3>
             <p>Bulevar Centroamerica</p>
             <p>Tegucigalpa, Honduras 12101</p>
             <p>info@tegucigalpa.org</p>
             <p>(+504) 2223-8525</p>
 
-        </div>
-        <div class="social-media">
+        </section>
+        <section class="social-media">
             <img src="images/youtube_logo.svg" alt="youtube">
             <img src="images/twitter_logo.svg" alt="X">
             <img src="images/linkedin_logo.png" alt="linkedIn">
-        </div>
-        <div class="student-info">
+        </section>
+        <section class="student-info">
             <p>WDD231 Class Project</p>
             <p class="my-name">Rafael Lopez</p>
             <p>&copy; <span id="currentyear"></span> Tegucigalpa | Chamber of Commerce </p>
             <p id="lastModified"></p>
-        </div>
+        </section>
     </footer>
 </body>
 </html>
