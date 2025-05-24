@@ -28,8 +28,10 @@
 
     <script src="scripts/navigation.js" defer> </script>
     <script src="scripts/date.js" defer> </script>
-    <script type="module" src="scripts/currentWeather.js" defer> </script>
-    <script type="module" src="scripts/forecastWeather.js" defer> </script>
+    <script type="module" src="scripts/currentWeather.js"> </script>
+    <script type="module" src="scripts/forecastWeather.js"> </script>
+
+    <script src="scripts/homeCards.js" defer> </script>
 
 
 </head>
@@ -66,7 +68,7 @@
             </picture>
         </section>
        
-        <section>
+        <section class="first-cards">
             <article class="main-cards"> 
                 <h2>Events</h2>
                 <p>Come join our special events!</p>
@@ -96,10 +98,13 @@
 
             </article>
             <article class="main-cards"> 
-                <h2>Weather Forecast</h2>
+                <h2>Forecast</h2>
                 <div id="forecast"></div>
 
             </article>
+        </section>
+        <section>
+            <article id="business-cards"></article>
         </section>
 
     </main>
