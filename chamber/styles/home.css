@@ -240,3 +240,21 @@ footer .my-name {
     font-family: var(--secondary-font);
     font-size: 1rem;
 }
+
+.hero-img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.hero-img picture {
+  display: block; /* Make the picture element a block */
+  width: 75%; /* The width of the image will be relative to this */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-img img {
+  width: 100%; /* Make the image fill the picture element */
+  height: auto;
+  display: block; /* Removes extra space beneath the image */
+}

@@ -1,0 +1,54 @@
+@media (min-width: 640px) { /* Start adjustments for tablets and up */
+#menu-toggle {
+    display: none;
+}
+
+#menu{
+    display: none;
+}
+nav {
+    display: block;
+    position: static;
+    max-height: none;
+    overflow: visible;
+    background-color: transparent;
+    margin-left: auto;
+    box-shadow: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content:center;
+}
+
+nav li {
+    border-top: none;
+}
+
+nav a {
+    padding: 0.6rem 1rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid transparent;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: transparent;
+    color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+}
+
+nav a.active {
+    font-weight: bold;
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+#cards {
+    grid-template-columns: 3fr; 
+}
+
+}
