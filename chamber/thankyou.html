@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Tegucigalpa Chamber of Commerce</title>
+    <meta name="description" content="Confirmation page for the Tegucigalpa Chamber of Commerce membership application.">
+    <meta name="author" content="Rafael Lopez">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="stylesheet" href="styles/join.css"> <!-- Reusing join styles for consistency -->
+    <link href="httpshttps://fonts.googleapis.com/css2?family=Roboto&family=Sofia&display=swap" rel="stylesheet">
+    
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script> <!-- New JS for this page -->
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h2>Tegucigalpa</h2>
+            <h4>Chamber of Commerce</h4>
+        </div>
+        <div class="logo-title">
+            <img src="images/favicon.ico" alt="Tegucigalpa Chamber Logo">
+        </div>
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+        <nav id="animateme">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="thankyou-main">
+        <h1>Thank You for Applying!</h1>
+        <p>Your application has been received. We will review it and get back to you shortly.</p>
+        <div id="formDataDisplay" class="form-data">
+            <h2>Application Summary</h2>
+            <!-- Data will be inserted here by thankyou.js -->
+        </div>
+    </main>
+
+    <footer>
+        <section class="chamber-info">
+            <h3>Tegucigalpa Chamber of Commerce</h3>
+            <p>Bulevar Centroamérica</p>
+            <p>Tegucigalpa, Honduras 12101</p>
+            <p>info@tegucigalpa.org</p>
+            <p>(+504) 2223-8525</p>
+        </section>
+        <section class="social-media">
+            <img src="images/youtube_logo.svg" alt="YouTube">
+            <img src="images/twitter_logo.svg" alt="X (Twitter)">
+            <img src="images/linkedin_logo.png" alt="LinkedIn">
+        </section>
+        <section class="student-info">
+            <p>WDD231 Class Project</p>
+            <p class="my-name">Rafael Lopez</p>
+            <p>&copy; <span id="currentyear"></span> Tegucigalpa | Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+</body>
+</html>

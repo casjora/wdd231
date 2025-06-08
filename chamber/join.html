@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber - Tegucigalpa Chamber of Commerce</title>
+    <meta name="description" content="Membership application form for the Tegucigalpa Chamber of Commerce.">
+    <meta name="author" content="Rafael Lopez">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="stylesheet" href="styles/join.css"> <!-- New CSS file for the join page -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sofia&display=swap" rel="stylesheet">
+    
+    <meta property="og:title" content="Join the Tegucigalpa Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Become a member of the Tegucigalpa Chamber of Commerce by filling out our application form.">
+    <meta property="og:url" content="https://casjora.github.io/wdd231/chamber/join.html">
+    <meta property="og:image" content="https://casjora.github.io/wdd231/images/tegus2.webp">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script> <!-- New JS file for the join page -->
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h2>Tegucigalpa</h2>
+            <h4>Chamber of Commerce</h4>
+        </div>
+        <div class="logo-title">
+            <img src="images/favicon.ico" alt="Tegucigalpa Chamber Logo">
+        </div>
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+        <nav id="animateme">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <h1>Membership Application</h1>
+        <div class="content-wrapper">
+            <form action="thankyou.html" method="get" class="wf1">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label>First Name* <input type="text" name="fname" id="fname" required autocomplete="given-name" title="Your first name"></label>
+                    <label>Last Name* <input type="text" name="lname" id="lname" required autocomplete="family-name" title="Your last name"></label>
+                    <label>Title/Position <input type="text" name="title" id="title" pattern="[a-zA-Z -]{7,}" title="Your title (min 7 alpha characters, hyphens, or spaces)" autocomplete="organization-title"></label>
+                    <label>Email Address* <input type="email" name="email" id="email" required placeholder="example@email.com" autocomplete="email" title="Your email address"></label>
+                    <label>Mobile Phone* <input type="tel" name="phone" id="phone" required autocomplete="tel" title="Your mobile phone number"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label>Business/Organization Name* <input type="text" name="business" id="business" required autocomplete="organization" title="Your business name"></label>
+                    
+                    <label>Membership Level*
+                        <div class="membership-options">
+                            <label><input type="radio" name="membership" value="np" required> NP Membership (Non-Profit)</label>
+                            <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                            <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                            <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                        </div>
+                    </label>
+
+                    <label>Business/Organization Description
+                        <textarea name="description" id="description" title="A brief description of your business"></textarea>
+                    </label>
+                </fieldset>
+
+                <input type="hidden" id="formLoadTimestamp" name="timestamp" value="">
+                <input type="submit" value="Join the Chamber" class="submit-btn">
+            </form>
+
+            <section class="membership-info">
+                <h2>Membership Benefits</h2>
+                <div class="membership-cards">
+                    <div class="card" id="np-card">
+                        <h3>NP Membership</h3>
+                        <p>For non-profit organizations.</p>
+                        <a href="#" class="learn-more" data-modal="np-modal">Learn More</a>
+                    </div>
+                    <div class="card" id="bronze-card">
+                        <h3>Bronze Membership</h3>
+                        <p>Basic benefits for new businesses.</p>
+                        <a href="#" class="learn-more" data-modal="bronze-modal">Learn More</a>
+                    </div>
+                    <div class="card" id="silver-card">
+                        <h3>Silver Membership</h3>
+                        <p>Enhanced benefits and visibility.</p>
+                        <a href="#" class="learn-more" data-modal="silver-modal">Learn More</a>
+                    </div>
+                    <div class="card" id="gold-card">
+                        <h3>Gold Membership</h3>
+                        <p>Premium benefits and event access.</p>
+                        <a href="#" class="learn-more" data-modal="gold-modal">Learn More</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modals for Membership Levels -->
+    <div id="np-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>NP (Non-Profit) Membership</h2>
+            <p><strong>Cost:</strong> No Fee</p>
+            <ul>
+                <li>Listing in the online chamber directory.</li>
+                <li>Access to monthly newsletters.</li>
+                <li>Invitation to non-profit-specific workshops.</li>
+                <li>Networking opportunities at general events.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="bronze-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Bronze Membership</h2>
+            <p><strong>Cost:</strong> $100 / year</p>
+            <ul>
+                <li>All NP benefits.</li>
+                <li>One free admission to a "Business After Hours" event.</li>
+                <li>Discounted rates for other chamber events.</li>
+                <li>Business name listed on the chamber website.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="silver-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Silver Membership</h2>
+            <p><strong>Cost:</strong> $250 / year</p>
+            <ul>
+                <li>All Bronze benefits.</li>
+                <li>Two spotlight features on the chamber's social media per year.</li>
+                <li>Enhanced directory listing with logo.</li>
+                <li>One dedicated email blast to chamber members.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="gold-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Gold Membership</h2>
+            <p><strong>Cost:</strong> $500 / year</p>
+            <ul>
+                <li>All Silver benefits.</li>
+                <li>Prominent logo placement on the chamber homepage.</li>
+                <li>Free vendor booth at the annual chamber expo.</li>
+                <li>Priority invitations to exclusive, high-profile events.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <section class="chamber-info">
+            <h3>Tegucigalpa Chamber of Commerce</h3>
+            <p>Bulevar Centroamérica</p>
+            <p>Tegucigalpa, Honduras 12101</p>
+            <p>info@tegucigalpa.org</p>
+            <p>(+504) 2223-8525</p>
+        </section>
+        <section class="social-media">
+            <img src="images/youtube_logo.svg" alt="YouTube">
+            <img src="images/twitter_logo.svg" alt="X (Twitter)">
+            <img src="images/linkedin_logo.png" alt="LinkedIn">
+        </section>
+        <section class="student-info">
+            <p>WDD231 Class Project</p>
+            <p class="my-name">Rafael Lopez</p>
+            <p>&copy; <span id="currentyear"></span> Tegucigalpa | Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+</body>
+</html>
