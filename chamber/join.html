@@ -52,7 +52,7 @@
                     <legend>Applicant Information</legend>
                     <label>First Name* <input type="text" name="fname" id="fname" required autocomplete="given-name" title="Your first name"></label>
                     <label>Last Name* <input type="text" name="lname" id="lname" required autocomplete="family-name" title="Your last name"></label>
-                    <label>Title/Position <input type="text" name="title" id="title" pattern="[a-zA-Z -]{7,}" title="Your title (min 7 alpha characters, hyphens, or spaces)" autocomplete="organization-title"></label>
+                    <label>Title/Position <input type="text" name="position" id="position" pattern="[a-zA-Z -]{7,}" title="Your title (min 7 alpha characters, hyphens, or spaces)" autocomplete="organization-title"></label>
                     <label>Email Address* <input type="email" name="email" id="email" required placeholder="example@email.com" autocomplete="email" title="Your email address"></label>
                     <label>Mobile Phone* <input type="tel" name="phone" id="phone" required autocomplete="tel" title="Your mobile phone number"></label>
                 </fieldset>
@@ -61,14 +61,13 @@
                     <legend>Business Information</legend>
                     <label>Business/Organization Name* <input type="text" name="business" id="business" required autocomplete="organization" title="Your business name"></label>
                     
-                    <label>Membership Level*
-                        <div class="membership-options">
-                            <label><input type="radio" name="membership" value="np" required> NP Membership (Non-Profit)</label>
-                            <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
-                            <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
-                            <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
-                        </div>
-                    </label>
+                    <fieldset class="membership-fieldset">
+                        <legend>Membership Level*</legend>
+                        <label><input type="radio" name="membership" value="np" required> NP Membership (Non-Profit)</label>
+                        <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                        <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                        <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                    </fieldset>
 
                     <label>Business/Organization Description
                         <textarea name="description" id="description" title="A brief description of your business"></textarea>
@@ -172,17 +171,17 @@
             <p>info@tegucigalpa.org</p>
             <p>(+504) 2223-8525</p>
         </section>
-        <section class="social-media">
+        <div class="social-media">
             <img src="images/youtube_logo.svg" alt="YouTube">
             <img src="images/twitter_logo.svg" alt="X (Twitter)">
             <img src="images/linkedin_logo.png" alt="LinkedIn">
-        </section>
-        <section class="student-info">
+        </div>
+        <div class="student-info">
             <p>WDD231 Class Project</p>
             <p class="my-name">Rafael Lopez</p>
             <p>&copy; <span id="currentyear"></span> Tegucigalpa | Chamber of Commerce</p>
             <p id="lastModified"></p>
-        </section>
+        </div>
     </footer>
 </body>
 </html>
