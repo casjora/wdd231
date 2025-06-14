@@ -1,0 +1,52 @@
+{
+  "places": [
+    {
+      "name": "Parque Nacional La Tigra",
+      "address": "La Tigra National Park, Tegucigalpa",
+      "description": "A beautiful cloud forest national park offering hiking trails, stunning biodiversity, and a visitor center. It's the primary source of water for the capital.",
+      "image": "images/discover/la-tigra.webp"
+    },
+    {
+      "name": "El Picacho",
+      "address": "Parque Naciones Unidas El Picacho",
+      "description": "Home to the iconic Christ the Redeemer statue, this park offers the most panoramic views of Tegucigalpa and its surrounding areas.",
+      "image": "images/discover/el-picacho.webp"
+    },
+    {
+      "name": "Museo para la Identidad Nacional",
+      "address": "Barrio Abajo, Calle El Telegrafo",
+      "description": "Housed in a historic building, this museum showcases Honduran history, art, and culture, including a virtual tour of the Copan ruins.",
+      "image": "images/discover/museo-identidad.webp"
+    },
+    {
+      "name": "Catedral de San Miguel Arcángel",
+      "address": "Parque Central, Tegucigalpa",
+      "description": "The main cathedral of the city, an impressive example of colonial baroque architecture located in the heart of the historic center.",
+      "image": "images/discover/catedral.webp"
+    },
+    {
+      "name": "Valle de Ángeles",
+      "address": "Valle de Ángeles, Francisco Morazán",
+      "description": "A charming and colorful colonial-era town just a short drive from the city, famous for its artisan crafts, souvenirs, and local cuisine.",
+      "image": "images/discover/valle-de-angeles.webp"
+    },
+    {
+      "name": "Plaza de los Dolores",
+      "address": "Next to Iglesia de Los Dolores, Tegucigalpa",
+      "description": "A historic square featuring one of the city's oldest churches. It's a lively spot to experience the local atmosphere and street food.",
+      "image": "images/discover/plaza-dolores.webp"
+    },
+    {
+      "name": "Jardín Botánico de la UNAH",
+      "address": "Universidad Nacional Autónoma de Honduras",
+      "description": "The botanical garden at the national university, providing a peaceful green space with a diverse collection of native Honduran plants.",
+      "image": "images/discover/jardin-botanico.webp"
+    },
+    {
+      "name": "Mercado de Artesanías Guamilito",
+      "address": "Barrio Guamilito, Tegucigalpa",
+      "description": "A bustling market where you can find a wide variety of handmade crafts, leather goods, pottery, and traditional Honduran souvenirs.",
+      "image": "images/discover/mercado-artesanias.webp"
+    }
+  ]
+}

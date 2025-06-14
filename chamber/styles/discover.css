@@ -1,0 +1,290 @@
+:root {
+    --primary-color: #005A9C;
+    --secondary-color: #333333;
+    --background-color: #F8F9FA;
+    --accent-color: #E0A800;
+    --border-color: #dee2e6;
+    --heading-font: 'Sofia', cursive;
+    --body-font: 'Roboto', sans-serif;
+    --text-color: black;
+}
+
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+#title h2 {
+    font-family: var(--heading-font);
+    margin: 0;
+    color: var(--primary-color);
+}
+
+#title h4 {
+    font-family: var(--body-font);
+    margin: 0;
+    color: var(--secondary-color);
+    font-weight: normal;
+}
+
+.logo-title img {
+    height: 50px;
+}
+
+#menu {
+    background: transparent;
+    color: var(--primary-color);
+    border: none;
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+
+#menu::before { content: "☰"; }
+#menu.show::before { content: "✖"; }
+
+nav {
+    display: none;
+    width: 100%;
+    background-color: var(--accent-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+nav.show {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    padding: 0.9rem 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover, nav a:focus {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+nav a.active {
+    background-color: #f0c040;
+    color: var(--secondary-color);
+}
+
+.discover-main {
+    padding: 1rem;
+}
+
+.discover-main h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* --- Small Screen Layout (Mobile) --- */
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.sidebar h2, .sidebar h3 {
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    margin-top: 0;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+#visitor-message {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.demographics p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.cards-container {
+    grid-area: cards;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.discover-card {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.discover-card figure {
+    margin: 0;
+    overflow: hidden;
+}
+
+.discover-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.discover-card-content {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.discover-card h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.discover-card address {
+    font-style: normal;
+    color: var(--secondary-color);
+    margin-bottom: 0.75rem;
+}
+
+.discover-card p {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.discover-card .learn-more-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.discover-card .learn-more-btn:hover {
+    background-color: #004a80;
+}
+
+/* --- Medium Screen Layout --- */
+@media (min-width: 641px) {
+    .discover-grid {
+        grid-template-columns: 250px 1fr; /* Sidebar and main content */
+        grid-template-areas: "sidebar cards";
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .discover-card:hover img {
+        transform: scale(1.05);
+        filter: brightness(0.8);
+    }
+}
+
+/* --- Large Screen Layout --- */
+@media (min-width: 1025px) {
+    #menu {
+        display: none;
+    }
+    nav {
+        display: block;
+        position: static;
+        width: auto;
+        box-shadow: none;
+    }
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+    nav li {
+        border-top: none;
+    }
+    nav a {
+        padding: 0.6rem 1rem;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: #f0f0f0;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer .chamber-info, footer .social-media, footer .student-info {
+    margin-bottom: 1.2rem;
+}
+
+footer h3 {
+    color: var(--accent-color);
+    font-family: var(--heading-font);
+}
+
+footer p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+footer .social-media img {
+    width: 32px;
+    height: 32px;
+    margin: 0 0.6rem;
+}
