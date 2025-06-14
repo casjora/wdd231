@@ -135,7 +135,7 @@ nav a.active {
 
 #visitor-message {
     background-color: var(--accent-color);
-    color: var(--secondary-color);
+    color: black;
     padding: 1rem;
     border-radius: 5px;
     font-weight: bold;
