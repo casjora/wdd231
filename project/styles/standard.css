@@ -1,0 +1,218 @@
+:root{
+    --primary-color: #005A9C;
+    --secondary-color: #333333;
+    --background-color: #F8F9FA;
+    --accent-color: #E0A800;
+    --border-color: #dee2e6;
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Lato', sans-serif;
+}
+
+html{
+    font-size: 1rem;
+}
+
+main{
+    margin-top: 125px;
+}
+
+body{
+    font-family: var(--body-font);
+    color: var(--secondary-color);
+    background-color: var(--background-color);
+    padding: 10px;
+    max-width: 550px;
+}
+
+h1,h2,h3{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+h2{
+    font-size: 1.6rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.25rem;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
+/* Menu CSS*/
+nav{
+    background-color: var(--secondary-color);
+    max-width: 800px;
+    margin: 1rem;
+    
+}
+
+.navigation{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+
+}
+
+.navigation li{
+    display: none;
+}
+
+nav a{
+    display:block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
+    background-color: var(--secondary-color);
+
+}
+
+nav a:hover{
+    text-decoration: underline double;
+    background-color: #add8e6;
+    color: #000;
+}
+
+.navigation.show li{
+    display: block;
+}
+
+#menu.show::before{
+    content: "X";
+}
+
+#menu{
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1rem .75rem;
+    background-color: #eee;
+    color: #000;
+    max-width: 100px;
+    margin-top: 5px;
+    margin-right: 2%;
+
+
+
+}
+#menu::before{
+    content: "☰";
+}
+
+/* CSS to align items */
+
+.logo-placeholder {
+    border:5px ridge black;
+    border-radius: 10px;
+    background-color: #E0A800;
+    position: fixed;
+    top: 5px;
+    width: 92%;
+    margin-right: 50px;
+}
+.logo-placeholder img{
+    /* border: 2px solid black; */
+    justify-self: left;
+    position: absolute;
+
+
+}
+
+.logo-placeholder #menu{
+    /* border: 2px solid black; */
+
+    justify-self: right;
+}
+
+.logo{
+    background-color: transparent;
+    margin-left: 2%;
+    margin-top: 5px;
+    width: 15%;
+    max-width: 80px;
+}
+.logo:hover{
+    scale: 1.2;
+}
+
+.qaPhoto{
+    border: 10px inset black;
+    text-align: center;
+    border-radius: 20px;
+    margin-right: 10px;
+    width: 90%;
+
+}
+
+.qaPhoto img{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-width: 50%;
+
+}
+
+.qaPhoto img:hover{
+    transform: scale(1.1);
+    transition: transform 1.5s;
+
+}
+
+.img-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    max-width: 400px;
+    margin-bottom: 70px;
+
+}
+
+.textBox {
+    text-align: center;
+    /* Add a width constraint to the container if it doesn't have one */
+    /* Examples (choose one or adjust as needed): */
+    width: auto;        /* Make it take the full width of its parent */
+    max-width: 600px;   /* Or set a maximum width */
+    /* border: 1px solid red; /* TEMPORARY: Add border to visualize container */
+}
+
+/* Apply wrapping rules DIRECTLY to the P elements inside .textBox */
+.textBox p {
+    white-space: normal;
+    overflow-wrap: break-word;
+     width: auto; 
+     max-width: 100%;
+}
+
+
+.label{
+    font-weight: bolder;
+}
+
+.joinMain {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+}
+
+.tyMessage{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}

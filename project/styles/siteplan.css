@@ -1,0 +1,123 @@
+:root{
+    --primary-color: #005A9C;
+    --secondary-color: #333333;
+    --background-color: #F8F9FA;
+    --accent-color: #E0A800;
+    --border-color: #dee2e6;
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Lato', sans-serif;
+}
+
+html{
+    font-size: 1rem;
+}
+
+body{
+    font-family: var(--body-font);
+    color: var(--secondary-color);
+    background-color: var(--background-color);
+    padding: 10px;
+}
+
+h1,h2,h3{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+h2{
+    font-size: 1.6rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.25rem;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
+p{
+    margin-bottom: 1rem;
+}
+ul{
+    margin-left: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+li{
+    margin-bottom: 0.5rem;
+}
+
+strong{
+    font-weight: 700;
+}
+
+em{
+    font-style: italic;
+}
+
+header,main, footer{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+header{
+    margin-bottom: 1rem;
+}
+
+section{
+    margin-bottom: 2rem;
+}
+
+/*Logo*/
+.logo{
+    min-height: 50px;
+    background-color: #fff;
+    margin-bottom: 1rem;
+
+}
+
+/* Color sections */
+.primary-color, .secondary-color,
+.background-color,.accent-color{
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+    border: 1px solid var(--secondary-color);
+}
+
+.primary-color { background-color: var(--primary-color); }
+.secondary-color { background-color: var(--secondary-color); }
+.background-color { background-color: var(--background-color); }
+.accent-color { background-color: var(--accent-color); }
+
+/* Wireframe Images */
+.wf-mobile, .wf-desktop {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    margin-top: 0.5rem;
+    background-color: #fff;
+    text-align: center; 
+}
+
+.wf-mobile img, .wf-desktop img {
+    max-width: 100%; 
+    height: auto;   
+    display: block; /* Prevents extra space below image */
+    margin: 0 auto; /* Center image within its container */
+}
+

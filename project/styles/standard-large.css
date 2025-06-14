@@ -1,0 +1,56 @@
+@media (min-width: 600px) {
+    body{
+        max-width: 98%;
+    }
+    
+    #menu{
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        max-width: 2000px;
+        justify-content:center;
+        background-color: var(--accent-color);
+
+
+    }
+    .navigation {
+        flex-direction:row;
+
+
+    }
+    .navigation li {
+        display: block;
+
+    }
+
+
+    .logo-placeholder {
+        width: 98%;
+    }
+
+    .qaPhoto{
+        width: 94%;
+        margin-bottom: 5px;
+    }
+
+    .img-container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        overflow: auto;
+        white-space: nowrap;
+        padding: 10px;
+        max-width: 100%;
+        margin-bottom: 70px;
+    
+    }
+
+    .textBox{
+        width: auto;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+        
+}

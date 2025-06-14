@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpreter Toolbox - Subscribe</title>
+    <meta name="description" content="Product Review Form practice">
+    <meta name="author" content="Rafael Lopez">
+    <link rel="stylesheet" href="styles/standard.css">
+    <link rel="stylesheet" href="styles/standard-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="scripts/intTool.js" defer> </script>
+    <script src="scripts/join.js" defer></script>
+
+
+</head>
+<body>
+    <main>
+        <section>
+            <header>
+                <div class="logo-placeholder menu">
+                    <img class="logo" src="images/icon-svg.svg" alt="IntTool Logo">
+                    <button id="menu" aria-label="menu"></button>
+                    <nav>
+                        <ul class="navigation">
+                            <li> <a href="index.html">Home</a></li>
+                            <li> <a href="protocols-bestprac.html">Protocols & Best Practices</a></li>
+                            <li> <a href="join.html">Subscribe</a></li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+
+                
+
+            </header>
+        </section>
+        <h1>Interested in Subscribing?</h1>
+        <p>Feel free to subscribe so you receive our most updated reports and news.</p>
+
+<!-- Section for OPI Intro, make an itro to protocols importance and  -->
+
+        <section class="join-placeholder">
+            <form method="get" action="thankyou.html" id="subscribeForm" class="wf1">
+                
+                <fieldset>
+                    <legend>Subscribe for Updates!</legend>
+                    <label for="subsName">Name:</label>
+                    <input type="text" id="subsName" name="subsName" required>
+                    <label for="subsEmail">Email:</label>
+                    <input type="email" id="subsEmail" name="subsEmail" required placeholder="usernama@email.com">
+                </fieldset>
+
+                <input type="submit" value="I want your updates now!">
+    
+            </form>
+            <div class="stats">
+                <p>Total subscribers so far: <span id="subscount">0</span></p>
+            </div>
+
+        </section>
+        <!-- Intro to QA Team, photos with QAs info -->
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Rafael Lopez, Honduras</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+    
+</body>
+</html>
