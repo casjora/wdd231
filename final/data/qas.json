@@ -1,0 +1,137 @@
+[
+    {
+        "qaName": "Aba Nigeria",
+        "location": "San Pedro Sula, Honduras",
+        "started": "2005, August, 7",
+        "position": "QA Team Leader",
+        "pictureLoc": "images/qa1.jpg",
+        "accounts": ["Kelly", "Cyracom", "iTi"],
+        "funFact": "Is secretly amazing at salsa dancing and loves hiking near Lake Yojoa."
+    },
+    {
+        "qaName": "Maria Garcia",
+        "location": "Mexico City, Mexico",
+        "started": "2010, March, 15",
+        "position": "QA Team Leader",
+        "pictureLoc": "images/qa2.jpg",
+        "accounts": ["Equiti"],
+        "funFact": "Collects vintage postcards from every city visited. Has over 300!"
+    },
+    {
+        "qaName": "John Smith",
+        "location": "London, UK",
+        "started": "2012, November, 22",
+        "position": "QA Analyst",
+        "pictureLoc": "images/qa3.jpg",
+        "accounts": ["Cyracom", "iTi"],
+        "funFact": "Can identify over 50 types of tea by smell alone. Favorite is Earl Grey."
+    },
+    {
+        "qaName": "Priya Sharma",
+        "location": "Bangalore, India",
+        "started": "2018, June, 1",
+        "position": "QA Analyst",
+        "pictureLoc": "images/qa4.jpg",
+        "accounts": ["Cyracom"],
+        "funFact": "Is a regional Chess champion and makes incredibly spicy biryani."
+    },
+    {
+        "qaName": "Kenji Tanaka",
+        "location": "Tokyo, Japan",
+        "started": "2015, September, 10",
+        "position": "QA Analyst",
+        "pictureLoc": "images/qa5.jpg",
+        "accounts": ["Equiti"],
+        "funFact": "Practices calligraphy and builds intricate Gundam models on weekends."
+    },
+    {
+        "qaName": "Fatima Rossi",
+        "location": "Rome, Italy",
+        "started": "2019, February, 28",
+        "position": "QA Analyst",
+        "pictureLoc": "images/qa6.jpg",
+        "accounts": ["Kelly"],
+        "funFact": "Speaks conversational Italian and makes the best homemade pasta carbonara."
+    },
+    {
+        "qaName": "David Miller",
+        "location": "Sydney, Australia",
+        "started": "2011, July, 4",
+        "position": "QA Analyst",
+        "pictureLoc": "images/qa7.jpg",
+        "accounts": ["Kelly", "Equiti"],
+        "funFact": "Once surfed with dolphins at Byron Bay (and has photos to prove it!)."
+    },
+    {
+        "qaName": "Sofia Petrova",
+        "location": "Kyiv, Ukraine",
+        "started": "2021, January, 19",
+        "position": "QA Analyst",
+        "pictureLoc": "images/qa8.jpg",
+        "accounts": ["Equiti"],
+        "funFact": "Expert baker known locally for her intricate Pysanky egg designs."
+    },
+    {
+        "qaName": "Ahmed Hassan",
+        "location": "Cairo, Egypt",
+        "started": "2016, May, 5",
+        "position": "QA Analyst",
+        "pictureLoc": "images/qa9.jpg",
+        "accounts": ["Equiti"],
+        "funFact": "Fascinated by ancient history; volunteers at the Egyptian Museum on Saturdays."
+    },
+    {
+        "qaName": "Isabelle Dubois",
+        "location": "Paris, France",
+        "started": "2013, October, 31",
+        "position": "QA Analyst",
+        "pictureLoc": "images/qa10.jpg",
+        "accounts": ["Kelly"],
+        "funFact": "Has a small but growing collection of vintage French comic books."
+    },
+    {
+        "qaName": "Carlos Silva",
+        "location": "São Paulo, Brazil",
+        "started": "2017, April, 12",
+        "position": "QA Analyst",
+        "pictureLoc": "images/qa11.jpg",
+        "accounts": ["iTi"],
+        "funFact": "Plays guitar in a Bossa Nova band and is a passionate football fan."
+    },
+    {
+        "qaName": "Anna Kowalski",
+        "location": "Warsaw, Poland",
+        "started": "2020, August, 20",
+        "position": "Junior QA Analyst",
+        "pictureLoc": "images/qa12.jpg",
+        "accounts": ["Cyracom"],
+        "funFact": "Loves cycling through the Masurian Lake District and making pierogi from a family recipe."
+    },
+    {
+        "qaName": "Liam O'Connell",
+        "location": "Dublin, Ireland",
+        "started": "2014, June, 9",
+        "position": "Senior QA Analyst",
+        "pictureLoc": "images/qa13.jpg",
+        "accounts": ["Kelly", "Equiti"],
+        "funFact": "An avid storyteller who can often be found at a local pub sharing Irish folklore."
+    },
+    {
+        "qaName": "Chloe Chen",
+        "location": "Toronto, Canada",
+        "started": "2022, May, 3",
+        "position": "Junior QA Analyst",
+        "pictureLoc": "images/qa14.jpg",
+        "accounts": ["iTi"],
+        "funFact": "A foodie who runs a popular blog reviewing Toronto's diverse culinary scene."
+    },
+    {
+        "qaName": "Omar Abdullah",
+        "location": "Dubai, UAE",
+        "started": "2018, December, 18",
+        "position": "QA Analyst",
+        "pictureLoc": "images/qa15.jpg",
+        "accounts": ["Equiti"],
+        "funFact": "Enjoys desert sandboarding and is a certified scuba diver."
+    }
+]
