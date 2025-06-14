@@ -216,3 +216,57 @@ nav a:hover{
     grid-column: 2/3;
     grid-row: 2/3;
 }
+/* --- Wayfinding --- */
+.navigation a.active {
+    background-color: #add8e6;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+/* --- Modal Styles --- */
+#qa-modal {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+#qa-modal::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#modal-content h3 {
+    margin-top: 0;
+}
+
+#modal-content p {
+    margin-bottom: 0.5rem;
+}
+
+#modal-close-btn {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#modal-close-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* --- Card Clickability --- */
+.qaPhoto {
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.qaPhoto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
